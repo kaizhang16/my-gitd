@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  web:
+    image: gitea/gitea:1.4.2
+    ports:
+      - "10022:22"
+      - "10080:3000"
+    volumes:
+      - ./data:/data
+    restart: always
